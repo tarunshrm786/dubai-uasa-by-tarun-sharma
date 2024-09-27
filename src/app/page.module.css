@@ -242,6 +242,7 @@
   justify-content: space-between;
   position: relative;
   overflow: hidden;
+  background-color: black; 
 }
 
 .header {
@@ -304,7 +305,6 @@
   .cardContainer {
     justify-content: center; /* Center cards on small screens */
   }
-
   
 }
 
