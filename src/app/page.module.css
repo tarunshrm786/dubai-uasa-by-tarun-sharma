@@ -289,7 +289,7 @@
   width: 250px;
   height: 250px;
   perspective: 1000px; 
-  opacity: 0; 
+  opacity: 0.8; 
   transform: translateY(100px); 
   animation: fadeIn 1.5s ease forwards; 
 }
@@ -401,7 +401,7 @@
   height: 100%;
   object-fit: cover;
   z-index: 1; /* Ensure video is below header and main content */
-  opacity: 0.5;
+  opacity: 0.4;
 }
 
 @keyframes fadeIn {
