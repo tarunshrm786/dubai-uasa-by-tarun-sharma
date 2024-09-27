@@ -507,7 +507,7 @@ export default function Home() {
 
       {/* Background Video */}
       <video autoPlay muted loop className={styles.backgroundVideo}>
-        <source src="/videos/background.mp4" type="video/mp4" />
+        <source src="/videos/background-2.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 

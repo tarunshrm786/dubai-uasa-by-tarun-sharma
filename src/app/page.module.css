@@ -304,6 +304,8 @@
   .cardContainer {
     justify-content: center; /* Center cards on small screens */
   }
+
+  
 }
 
 .cardInner {
