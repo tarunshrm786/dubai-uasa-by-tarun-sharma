@@ -249,6 +249,8 @@
   justify-content: center;
   align-items: center;
   padding: 20px;
+  position: relative; /* Ensure header stays above the video */
+  z-index: 2; /* Higher z-index to keep it above the video */
 }
 
 .logoCenter {
@@ -262,9 +264,8 @@
   justify-content: center;
   flex: 1;
   padding: 40px;
-  /* color: white; */
   text-align: center;
-  z-index: 2;
+  z-index: 3; /* Ensure main content stays above the video */
 }
 
 .mainText {
@@ -374,7 +375,7 @@
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.7);
   color: white;
-  z-index: 3;
+  z-index: 3; /* Ensure footer stays above the video */
 }
 
 .socialIcons {
@@ -399,7 +400,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: 1;
+  z-index: 1; /* Ensure video is below header and main content */
   opacity: 0.6;
 }
 
@@ -473,4 +474,3 @@
     transform: translateY(0); 
   }
 }
-

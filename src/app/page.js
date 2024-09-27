@@ -293,6 +293,85 @@
 // }
 
 
+// import Head from 'next/head';
+// import Image from 'next/image';
+// import { FaFacebookF, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
+// import styles from './page.module.css';
+
+// export default function Home() {
+//   const cardData = [
+//     { title: 'UASA', detail: 'Your trusted partner in cybersecurity' },
+//     { title: 'Event', detail: 'Stay updated on upcoming events' },
+//     { title: 'Investor Education', detail: 'Learn more about secure investing' },
+//     { title: 'USA Training', detail: 'Enhance your security skills' },
+//   ];
+
+//   return (
+//     <div className={styles.container}>
+//       <Head>
+//         <title>UASA Landing Page</title>
+//         <meta name="description" content="Modern UI landing page for UASA" />
+//       </Head>
+
+//       {/* Header Section */}
+//       <header className={styles.header}>
+//         <Image 
+//           src="/images/logo-black.png" 
+//           alt="Logo" 
+//           width={310} 
+//           height={60} 
+//           className={styles.logoCenter} 
+//         />
+//       </header>
+
+//       {/* Main Section */}
+//       <main className={styles.main}>
+//         <p className={styles.mainText}>Empowering Your Security Knowledge</p>
+
+//         {/* 3D Box Section */}
+//         <div className={styles.cardContainer}>
+//           {cardData.map((item, index) => (
+//             <div className={styles.card} key={index}>
+//               <div className={styles.cardInner}>
+//                 <div className={styles.cardFront}>
+//                   <h3>{item.title}</h3>
+//                 </div>
+//                 <div className={styles.cardBack}>
+//                   <h3>{item.title}</h3>
+//                   <p>{item.detail}</p>
+//                   <button className={styles.button}>Learn More</button>
+//                 </div>
+//               </div>
+//             </div>
+//           ))}
+//         </div>
+//       </main>
+
+//       {/* Footer Section */}
+//       <footer className={styles.footer}>
+//         <p>&copy; 2024 UASA. All rights reserved.</p>
+//         <div className={styles.socialIcons}>
+//           <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+//             <FaFacebookF className={styles.icon} />
+//           </a>
+//           <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+//             <FaTwitter className={styles.icon} />
+//           </a>
+//           <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+//             <FaLinkedinIn className={styles.icon} />
+//           </a>
+//         </div>
+//       </footer>
+
+//       {/* Background Video */}
+//       <video autoPlay muted loop className={styles.backgroundVideo}>
+//         <source src="/videos/background.mp4" type="video/mp4" />
+//         Your browser does not support the video tag.
+//       </video>
+//     </div>
+//   );
+// }
+
 import Head from 'next/head';
 import Image from 'next/image';
 import { FaFacebookF, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
@@ -347,6 +426,12 @@ export default function Home() {
         </div>
       </main>
 
+      {/* Background Video */}
+      <video autoPlay muted loop className={styles.backgroundVideo}>
+        <source src="/videos/background.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
       {/* Footer Section */}
       <footer className={styles.footer}>
         <p>&copy; 2024 UASA. All rights reserved.</p>
@@ -362,12 +447,6 @@ export default function Home() {
           </a>
         </div>
       </footer>
-
-      {/* Background Video */}
-      <video autoPlay muted loop className={styles.backgroundVideo}>
-        <source src="/videos/background.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
     </div>
   );
 }
