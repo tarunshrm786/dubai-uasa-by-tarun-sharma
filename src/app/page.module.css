@@ -323,6 +323,7 @@
   width: 100%;
   height: 100%;
   backface-visibility: hidden; 
+  box-shadow: 5px 5px 5px white;
   border-radius: 15px;
   display: flex;
   justify-content: center;
@@ -402,6 +403,7 @@
   object-fit: cover;
   z-index: 1; /* Ensure video is below header and main content */
   opacity: 0.9;
+
 }
 
 @keyframes fadeIn {
